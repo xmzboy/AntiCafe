@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Обратная связь</title>
+        <meta charset="UTF-8">
+        <link rel="icon" href="css/img/logo_icon.ico" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
+		<link rel="stylesheet" type="text/css" href="css/lightbox.css" />
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Lora:400,400italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+		<script type="text/javascript" src="js/jquery-2.1.1.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/jquery.waypoints.min.js"></script>
+		<script type="text/javascript" src="js/lightbox.min.js"></script>	
+		<script type="text/javascript">
+			
+			function init()
+			{				
+				var waypoint = new Waypoint({
+					element: document.getElementById('shiva'),
+					handler: function(direction) {
+						countDigits();
+					},
+				offset: '100%'
+			})
+			}
+		
+			function countDigits() {
+				if (alreadyCounted)
+				{
+					return;
+				}
+				
+				alreadyCounted = true;
+			
+			$('.count').each(function ()
+			{
+				$(this).prop('Counter', 0).animate({Counter:$(this).text()}, {duration: 4000, easing: 'swing', step : function(now) {$(this).text(Math.ceil(now));} });
+				});
+			}
+		</script>
+	</head>
+	<body>
+		<div id="wrapper">
+			<header class="top">
+				<div class="container">
+					<div class="grid-12">
+						<nav class="main-menu">
+							<ul>
+								<li class="active"><a href="">Контакты</a></li>
+								<li><a href="services.html">Услуги</a></li>
+								<li><a class="logo-img" href="index.html"></a></li>
+								<li><a href="team.html">Команда</a></li>
+								<li><a href="excursion.html">Экскурсия</a></li>
+							</ul>
+						</nav>			
+					</div>
+				</div>
+			</header>
+			<section class="container name-partners">
+				<div class="grid-12">
+					<h1>Связаться с нами</h1>
+				</div>
+			</section>
+			<div class="background-partners partners">
+				<section class="container">
+				<div class="ul-img-partners">
+					<div class="grid-9">
+						<div class="article-article">
+							<p>Если вы хотите позвонить в наше антикафе, то вы можете это сделать по номеру<b>+7 987 654 32 10</b>.<p>
+							<p>Если у вас возник вопрос, вы можете написать нам на нашу почту <a href="">anticafe@guild.com</a>или использовать контактную форму ниже.<p>
+							<form class="mainform">
+								<!-- <p class="error">Заполните поле</p> -->
+								<!--<div class="success-center"><p class="success">Ваше сообщение отправлено</p></div>-->
+								<p class="p-form">Ваше имя:* </p>
+								<input class="form-input" type="text" placeholder="Ivan" value="" name="NAME" size="50" required >
+								<p class="p-form">Ваш телефон:* </p>
+								<input class="form-input" placeholder="+7 987 123 45 67" type="text" value="" name="PHONE" size="50" required>
+								<p class="p-form">Ваш e-mail: </p>
+								<input class="form-input" placeholder="index@index.ru" type="text" value="" name="EMAIL" size="50">
+								<p class="p-form">Поле для текста:* </p>
+								<textarea class="form-input" placeholder="Напишите нам сообщение" name="textarea" cols="50" rows="5" required></textarea>
+								<p><input class="bt" type="submit" value="Отправить"></p>
+								<p>* - поля обязательные для заполнения</p>
+							</form>
+						</div>
+					</div>
+					<div class="grid-3">
+						<div class="contact-main border-partners">
+						<h3>Наш директор</h3>
+							<img src="css/img/director.jpg">
+							<p>По поводу вопросов сотрудничества вы можете связаться со мной по почте <a href="">vanichpz@gmail.com</a> или подойти лично ко мне в антикафе.</p>
+						</div>
+						<div class="border-partners">
+							<h3><a href="https://www.instagram.com/">Instagram</a></h3>
+						</div>
+						<div class="border-partners">
+							<h3><a href="https://vk.com/id76852272">Vkontakte</a></h3>
+						</div>
+					</div>
+					</div>	
+				</section>
+			</div>
+			<footer id="footer" class="bottom-menu">
+				<section class="container">
+					<div class="grid-12">
+						<div class="text-bottom">
+							<p>Мы всегда рады вам по адресу:</p>
+							<p><b>Пулковское шоссе д.40к3</b></p>
+							<br>
+							<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A2b7fe28580552df9bb06d018fff0a64ea53d90af0b1a0cf33787349b17c4aa71&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+							<br>
+							<p>Связаться с нами</p>
+						</div>
+							<p class="p-i">Оставьте номер своего телефона, если вас что-то заинтересовало и мы вам перезвоним</p>
+						<form>
+							<p><input class="field" placeholder="+7 987 654 32 10" class="form-input" type="text" value="" name="NAME" size="40" required></p>
+							<p><input class="bt" type="submit" value="Отправить"></p>
+						</form>
+						<ul>
+							<li><a href="contacts.html">Контакты</a></li>
+							<li><a href="services.html">Услуги</a></li>
+							<li><a href="team.html">Команда</a></li>
+							<li><a href="excursion.html">Экскурсия</a></li>
+						</ul>
+						<p class="contacts">
+							<span>Телефон: +7 (900) 555 35 35</span>
+							<span>Адрес: г.Санкт-Петербург, Пулковское шоссе, 40к3</span>
+							<span>Email: <a href="">vanichpz@gmail.ru</a></span>
+						</p>
+						<p class="i-item">
+							<a href="https://vk.com/id76852272"><i class="fa fa-vk"></i></a>
+							<a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+						</p>
+						<a href="index.html"><img src="css/img/logo.png"></a>
+					</div>
+				</section>	
+				<section class="copy">
+					<div class="container">
+						<div class="grid-12">
+							<p>Все права защищены, 2022 Антикафе Гильдия.</p>
+						</div>
+					</div>
+				</section>
+					</div>
+				</div>	
+			</footer>
+		</div>
+		
+		
+		<script type="text/javascript">
+			var alreadyCounted = false;
+			init();
+			</script>
+			
+	</body>
+</html>	

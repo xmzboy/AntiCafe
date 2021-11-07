@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Афиша</title>
+        <meta charset="UTF-8">
+        <link rel="icon" href="css/img/logo_icon.ico" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
+		<link rel="stylesheet" type="text/css" href="css/lightbox.css" />
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Lora:400,400italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+		<script type="text/javascript" src="js/jquery-2.1.1.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/jquery.waypoints.min.js"></script>
+		<script type="text/javascript" src="js/lightbox.min.js"></script>	
+		<script type="text/javascript">
+			
+			function init()
+			{				
+				var waypoint = new Waypoint({
+					element: document.getElementById('shiva'),
+					handler: function(direction) {
+						countDigits();
+					},
+				offset: '100%'
+			})
+			}
+		
+			function countDigits() {
+				if (alreadyCounted)
+				{
+					return;
+				}
+				
+				alreadyCounted = true;
+			
+			$('.count').each(function ()
+			{
+				$(this).prop('Counter', 0).animate({Counter:$(this).text()}, {duration: 4000, easing: 'swing', step : function(now) {$(this).text(Math.ceil(now));} });
+				});
+			}
+		</script>
+	</head>
+	<body>
+		<div id="wrapper">
+			<header class="top">
+				<div class="container">
+					<div class="grid-12">
+						<nav class="main-menu">
+							<ul>
+								<li class="active"><a href="">Афиша</a></li>
+								<li><a href="partners.html">Партнерство</a></li>
+								<li><a href="gallery.html">Галерея</a></li>
+								<li><a href="contacts.html">Контакты</a></li>
+								<li><a class="logo-img" href="index.html"></a></li>
+								<li><a href="prices.html">Цены</a></li>
+								<li><a href="services.html">Услуги</a></li>
+								<li><a href="team.html">Команда</a></li>
+								<li><a href="excursion.html">Экскурсия</a></li>
+							</ul>
+						</nav>			
+					</div>
+				</div>
+			</header>
+			<section class="fon-item">
+				<div class="container">
+					<div class="grid-12">
+						<div class="text-article-img">
+							<h1>Афиша</h1>
+							<p><i>Тут вы можете узнать о наших событиях и мероприятиях</i></p>
+						</div>
+					</div>
+				</div>
+				<img src="css/img/fon-item.jpg">
+			</section>
+			<!--<section class="container">
+				<div class="grid-12">
+					<article class="text-article">
+						<div class="col2">
+							<div class="item">
+								<p>Тут вы можете узнать о наших событизнать о наших</p>
+								<p>событиях и мероприят</p>
+								<p>событиях и мероприятиях Тут вы можете узнать о наших событиях и мероприятиях Тут вы можете узнать о наших событиях и мероприятиях</p>
+								<p>событиях и мероприятиях можете узнать о наших событиях и мероприятиях</p>
+								<p>событияы можете узнать о наших событиях и мероприятиях Тут вы можете узнать о наших событиях и мероприятиях</p>
+							</div>
+							<div class="item">
+								<p>Тут вы можете узнать о нашиможете узнать о наших событиях и мероприятиях Тут вы можете узнать о наших событиях и мероприятиях Тут вы можете узнать о наших событиях и мероприятиях</p>
+								<p>событиях и мероприятиях Тут вы можете узнать о наших событиях и мероприятиях Тут вы можете узнать о наших событиях и мероприятиях</p>
+								<p>событияы можете узнать о наших событиях и мероприятиях Тут вы можете узнать о наших событиях и мероприятиях</p>
+							</div>
+						</div>
+					</article>
+				</div>
+			</section>-->
+			<div class="background-afisha poster">
+				<section class="container">
+					<h2>Ближайшие мероприятия</h2>
+					<div class="col3">
+						<article class="item">
+							<a href="">
+								<img src="css/img/event_eng.jpg">
+							</a>
+							<h3><a href="">Английский клуб</a></h3>
+							<p class="ellipsis">Давно хотел пообщаться на английском, но нет собеседников? Приглашаем вас в наш Английский клуб, тут будут рады любому уровню английского. Опытные люди получат хорошую практику, новички изучат новое. Ждём вас!</p>
+							<p><span>Дата:</span> 12 ноября</p>
+							<p><span>Время начала:</span> 19:00</p>
+							<p><span>Стоимость:</span> 0 ₽</p>
+							<p><a href="">Подробнее...</a></p>
+						</article>
+						<article class="item">
+							<a href="">
+								<img src="css/img/event_got.jpg">
+							</a>
+							<h3><a href="">Игра престолов</a></h3>
+							<p class="ellipsis">Интриги, сражения и благородные дамы. В Семи Королевствах опять пылает пожар войны. Кто сможет занять Железный трон и стать правителем Вестероса на этот раз? Приходите и попробуйте одолеть других претендентов</p>
+							<p><span>Дата:</span> 13 ноября</p>
+							<p><span>Время начала:</span> 17:00</p>
+							<p><span>Стоимость:</span> 0 ₽</p>
+							<p><a href="">Подробнее...</a></p>
+						</article>
+						<article class="item">
+							<a href="">
+								<img src="css/img/event_got.jpg">
+							</a>
+							<h3><a href="">Игра престолов</a></h3>
+							<p class="ellipsis">Интриги, сражения и благородные дамы. В Семи Королевствах опять пылает пожар войны. Кто сможет занять Железный трон и стать правителем Вестероса на этот раз? Приходите и попробуйте одолеть других претендентов</p>
+							<p><span>Дата:</span> 13 ноября</p>
+							<p><span>Время начала:</span> 17:00</p>
+							<p><span>Стоимость:</span> 0 ₽</p>
+							<p><a href="">Подробнее...</a></p>
+						</article>
+						<article class="item">
+							<a href="">
+								<img src="css/img/event_got.jpg">
+							</a>
+							<h3><a href="">Игра престолов</a></h3>
+							<p class="ellipsis">Интриги, сражения и благородные дамы. В Семи Королевствах опять пылает пожар войны. Кто сможет занять Железный трон и стать правителем Вестероса на этот раз? Приходите и попробуйте одолеть других претендентов</p>
+							<p><span>Дата:</span> 13 ноября</p>
+							<p><span>Время начала:</span> 17:00</p>
+							<p><span>Стоимость:</span> 0 ₽</p>
+							<p><a href="">Подробнее...</a></p>
+						</article>
+						<article class="item">
+							<a href="">
+								<img src="css/img/event_got.jpg">
+							</a>
+							<h3><a href="">Игра престолов</a></h3>
+							<p class="ellipsis">Интриги, сражения и благородные дамы. В Семи Королевствах опять пылает пожар войны. Кто сможет занять Железный трон и стать правителем Вестероса на этот раз? Приходите и попробуйте одолеть других претендентов</p>
+							<p><span>Дата:</span> 13 ноября</p>
+							<p><span>Время начала:</span> 17:00</p>
+							<p><span>Стоимость:</span> 0 ₽</p>
+							<p><a href="">Подробнее...</a></p>
+						</article>
+						<article class="item">
+							<a href="">
+								<img src="css/img/event_got.jpg">
+							</a>
+							<h3><a href="">Игра престолов</a></h3>
+							<p class="ellipsis">Интриги, сражения и благородные дамы. В Семи Королевствах опять пылает пожар войны. Кто сможет занять Железный трон и стать правителем Вестероса на этот раз? Приходите и попробуйте одолеть других претендентов</p>
+							<p><span>Дата:</span> 13 ноября</p>
+							<p><span>Время начала:</span> 17:00</p>
+							<p><span>Стоимость:</span> 0 ₽</p>
+							<p><a href="">Подробнее...</a></p>
+						</article>
+					</div>
+				</section>
+			</div>
+			<section class="container">
+				<div class="grid-12">
+					<article class="text-close">
+						<h3>Мероприятия на каждый день</h3>
+						<p>Мероприятия в нашем антикафе проходят гораздо чаще чем обновляются на сайте. Практически каждый день случается что-нибудь интересное, будь то турнир в Mortal Combat или костюмированная вечеринка.
+						<p>Самые свежие события вы можете найти в  <a href="https://vk.com/xmzgeng">нашей группе ВК</a> или по звонку по нашему номеру телефона.</p>
+						<p>Ждём Вас!</p>
+					</article>
+				</div>
+			</section>
+			<footer id="footer" class="bottom-menu">
+				<section class="container">
+					<div class="grid-12">
+						<div class="text-bottom">
+							<p>Мы всегда рады вам по адресу:</p>
+							<p><b>Пулковское шоссе д.40к3</b></p>
+							<br>
+							<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A2b7fe28580552df9bb06d018fff0a64ea53d90af0b1a0cf33787349b17c4aa71&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+							<br>
+							<p>Связаться с нами</p>
+						</div>
+							<p class="p-i">Оставьте номер своего телефона, если вас что-то заинтересовало и мы вам перезвоним</p>
+						<form>
+							<p><input class="field" placeholder="+7 987 654 32 10" class="form-input" type="text" value="" name="NAME" size="40" required></p>
+							<p><input class="bt" type="submit" value="Отправить"></p>
+						</form>
+						<ul>
+							<li><a href="poster.html">Афиша</a></li>
+							<li><a href="partners.html">Партнерство</a></li>
+							<li><a href="gallery.html">Галерея</a></li>
+							<li><a href="contacts.html">Контакты</a></li>
+							<li><a href="prices.html">Цены</a></li>
+							<li><a href="services.html">Услуги</a></li>
+							<li><a href="team.html">Команда</a></li>
+							<li><a href="excursion.html">Экскурсия</a></li>
+						</ul>
+						<p class="contacts">
+							<span>Телефон: +7 (900) 555 35 35</span>
+							<span>Адрес: г.Санкт-Петербург, Пулковское шоссе, 40к3</span>
+							<span>Email: <a href="">vanichpz@gmail.ru</a></span>
+						</p>
+						<p class="i-item">
+							<a href="https://vk.com/id76852272"><i class="fa fa-vk"></i></a>
+							<a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+						</p>
+						<a href="index.html"><img src="css/img/logo.png"></a>
+					</div>
+				</section>	
+				<section class="copy">
+					<div class="container">
+						<div class="grid-12">
+							<p>Все права защищены, 2022 Антикафе Гильдия.</p>
+						</div>
+					</div>
+				</section>
+					</div>
+				</div>	
+			</footer>
+		</div>
+		
+		
+		<script type="text/javascript">
+			var alreadyCounted = false;
+			init();
+			</script>
+			
+	</body>
+</html>	
