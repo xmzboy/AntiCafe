@@ -39,3 +39,6 @@ Website have 5 folders:
 # Example
 Feedback form:
 ![Feedback form](https://github.com/xmzboy/AntiCafe/raw/main/readme_images/feedback.png)
+
+Reviews:
+![Reviews](https://github.com/xmzboy/AntiCafe/raw/main/readme_images/reviews.png)
