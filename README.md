@@ -6,6 +6,7 @@ This website is written as an example for the design of an anti-cafe website
 - [How it works](#how-it-works)
 - [Quick start](#quick-start)
 - [Structure](#structure)
+- [Example](#example)
 
 # How it works
 
@@ -35,3 +36,6 @@ Website have 5 folders:
 	* PSD files
 	* Logo
 * 🧪 js - folder with scripts
+# Example
+Feedback form:
+![Feedback form](https://github.com/xmzboy/AntiCafe/raw/main/readme_images/feedback.png)
