@@ -6,7 +6,7 @@ This website is written as an example for the design of an anti-cafe website
 - [How it works](#how-it-works)
 - [Quick start](#quick-start)
 - [Structure](#structure)
-- [Example](#example)
+- [Overview](#overview)
 
 # How it works
 
@@ -36,9 +36,12 @@ Website have 5 folders:
 	* PSD files
 	* Logo
 * 🎪 js - folder with scripts
-# Example
+# Overview
 Main page adaptive design:
 ![Index](https://github.com/xmzboy/AntiCafe/raw/main/readme_images/index.png)
+
+Feedback form:
+![Feedback form](https://github.com/xmzboy/AntiCafe/raw/main/readme_images/feedback.png)
 
 Reviews:
 ![Reviews](https://github.com/xmzboy/AntiCafe/raw/main/readme_images/reviews.png)
