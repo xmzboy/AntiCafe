@@ -22,23 +22,23 @@ Just open index.html in your browser.
 
 Website have 5 folders:
 
-* 🕸 Anticafe - main folder, containing:
+* 🎉 Anticafe - main folder, containing:
 	* All website's pages
 	* Readme file
 	* Other folders
-* 🏃 css - folder with styles, containing:
+* 🎈 css - folder with styles, containing:
 	* All website's styles
 	* Bootstrap files
 	* Other static folders
 * 🏗 fonts - folder with fonts
-* 🗄 img - folder with images, containing:
+* 🖼 img - folder with images, containing:
 	* All images
 	* PSD files
 	* Logo
-* 🧪 js - folder with scripts
+* 🎪 js - folder with scripts
 # Example
-Feedback form:
-![Feedback form](https://github.com/xmzboy/AntiCafe/raw/main/readme_images/feedback.png)
+Main page adaptive design:
+![Index](https://github.com/xmzboy/AntiCafe/raw/main/readme_images/index.png)
 
 Reviews:
 ![Reviews](https://github.com/xmzboy/AntiCafe/raw/main/readme_images/reviews.png)
