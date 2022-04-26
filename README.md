@@ -20,7 +20,7 @@ Just open index.html in your browser.
 
 # Structure
 
-Website have 5 folders:
+Website have 6 folders:
 
 * 🎉 Anticafe - main folder, containing:
 	* All website's pages
@@ -36,6 +36,8 @@ Website have 5 folders:
 	* PSD files
 	* Logo
 * 🎪 js - folder with scripts
+* 🎃 unused pages - folder with more example of website pages, unused in my project, but maybe helpful for you
+
 # Overview
 Main page adaptive design:
 ![Index](https://github.com/xmzboy/AntiCafe/raw/main/readme_images/index.png)
