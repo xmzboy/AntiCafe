@@ -22,9 +22,8 @@ Just open index.html in your browser.
 
 Website have 6 folders:
 
-* 🎉 Anticafe - main folder, containing:
+* 🎉 app - main folder, containing:
 	* All website's pages
-	* Readme file
 	* Other folders
 * 🎈 css - folder with styles, containing:
 	* All website's styles
